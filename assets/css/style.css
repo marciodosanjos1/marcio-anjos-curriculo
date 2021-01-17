@@ -1,0 +1,148 @@
+:root {
+    --primaria: rgb(114, 114, 214);
+    --bg1: rgb(215, 215, 255);
+    --bg2: rgb(235, 235, 113);
+    --bg3: rgb(235, 183, 88);
+    --padding: 20px;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Assistant';
+    font-size: 16px;
+
+}
+
+header, footer{
+    background-color: var(--bg1);
+}
+
+header, 
+aside,
+main,
+section,
+article,
+div,
+footer{
+    padding: var(--padding);
+}
+
+
+header{
+    border-bottom: 2px solid var(--primaria);
+    display:flexbox;
+}
+
+header p{
+    display:block;
+    text-align: center;
+}
+
+header span{
+    display:block;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 3em;
+    font-weight: 300;
+    margin: 24px auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2,
+h3 {
+    color: black;
+}
+
+h2{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+p {
+    color: black;
+    line-height: 20px;
+    margin: 8px auto;
+}
+
+header img {
+    animation: bordaCameleao 4s infinite;
+    border: 2px solid var(--primaria);
+    display: block;
+    border-radius: 50%;
+    filter: drop-shadow(2px 2px 4px var(--bg1));
+    height: 96px;
+    width: 96px;
+    transition: transform .8s cubic-bezier(.42,0,1,1); 
+}
+
+header img:hoover{
+    transform: rotateY(360deg);
+}
+
+ul, ol{
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#habilidades article{
+    background-color: var(--bg1);
+    display: inline-flexbox;
+    text-align: center;
+    min-width: calc (50% - 80px);
+    vertical-align: middle;
+    min-height: calc (50% - 80px);
+}
+
+[class*="-item"]{
+    background-color: var(--bg2);
+    border-radius: 32px;
+    margin-bottom: 16px;
+    padding: var(--padding);
+}
+
+.ano {
+    color:var(--bg1);
+    display: block;
+    font-style: italic;
+}
+
+[class*="-item" span]{
+    
+}
+
+
+
+[class*="-item"]:last-child{
+    background: color bg 3;
+    }
+}
+
+[class*="-item"]:nth-child(odd){
+    background-color: var(--bg1);
+}
+
+footer{
+    border-top: 2px solid var(--primaria);
+    text-align: center;
+}
